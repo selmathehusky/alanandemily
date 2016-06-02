@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="tree"></div>
@@ -40,7 +57,46 @@
       <div class="container">
         <div class="content">
           <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">Coming Soon! The site's almost done, please check back on Friday May 27th.
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+              <div id="story">
+                <h2 class="thin-letter text-center section-title">Our Story</h2>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="row">
+                      <div class="col-sm-6"><img src="img/healdsburg.jpg" class="img-responsive img-thumbnail"></div>
+                      <div class="col-sm-6">
+                        <p>Emily and Alan first met at a work happy hour. They quickly realized they had a lot in common, including attending Cornell at the same time. He stumped (but impressed) her with a geography trivia question and she played the harmonica necklace she was wearing, something he thought was the coolest thing ever. </p>
+                        <p>It wasn't until about a year later that they decided to spend some time together outside of work, despite his prior invite to play video games. Who knew the adventure they would find themselves embarking on.</p>
+                        <p>Since then, Emily and Alan have traveled the world together sharing in adventures and new experiences. They've seen orca whales in the San Juan islands, gone dogsledding in the Grand Tetons, wine tasted in Provence, and dressed up in kimonos in Japan. We're so excited to be with each other and invite you to come celebrate with us this August.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">				
+                    <p>
+                      <div class="quote"> <i class="fa fa-quote-left"></i> Brown eyed girl reminds me of the time we were at the Malibu winery when we first started dating. We sat on the lawn, sipped wine, and when the song came on, we got up and danced through the afternoon and into the evening. ~Alan  <i class="fa fa-quote-right"></i><br><br>
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A4myBMnNWZlgvVelYeTu55w" width="100%" height="100" frameborder="0" allowtransparency="true"></iframe>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-sm-6">				
+                    <p>
+                      <div class="quote"> <i class="fa fa-quote-left"></i> Empire of the Sun always reminds me of Alan. He was so into this song and music video that he spent a month making his Halloween costume. I can still see him working late at night attaching button after button to decorate his costume. I also still find blue threads randomly around the apartment to this day. ~Emily  <i class="fa fa-quote-right"></i><br><br>
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A5WBnKCEsPwsvWHUZmLjS3s" width="100%" height="100" frameborder="0" allowtransparency="true"></iframe>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+                <h2 class="thin-letter text-center section-title">The Proposal</h2>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p>Emily and I had gone stargazing a few times before and that gave me inspiration on how to propose. I wanted to create a special stargazing experience for her so I made an app that would take her on the tour of the night sky. I filled the sky with constellations in the shape of us. Each constellation told a story of the time we've spent with each other. While she was looking up at the sky, I set up string lights on the ground so when she looked down, I was on a knee to propose.</p>
+                    <p>I made sure the app was recording her with the front facing camera. Here are some clips of what we captured. Enjoy!</p>
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/PMeTf52Yr-k" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -52,16 +108,46 @@
     <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div data-dismiss="modal" class="close-modal"><i class="fa fa-close"></i></div>
-          <div class="prev-image"><i class="fa fa-angle-left fa-3x"></i></div>
-          <div class="next-image"><i class="fa fa-angle-right fa-3x"></i></div>
+          <div onclick="gotoPrevImage();" class="prev-image"><i class="fa fa-angle-left fa-3x"></i></div>
+          <div onclick="gotoNextImage();" class="next-image"><i class="fa fa-angle-right fa-3x"></i></div>
           <div class="modal-body"> 
             <div class="row">
-              <div class="col-xs-12"><img src="img/scrapbook/thailand-jump.jpg" class="img-responsive"></div>
+              <div id="insertvideohere" class="col-xs-12">
+                <iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe><img id="modalimage" class="img-responsive">
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        
+        $(document).keydown(function(e) {
+        	switch(e.which) {
+        		case 37: // left
+        			gotoPrevImage();
+        			break;
+        
+        		case 38: // up
+        		break;
+        
+        		case 39: // right
+        			gotoNextImage();
+        			break;
+        
+        		case 40: // down
+        		break;
+        
+        		default: return; // exit this handler for other keys
+        	}
+        	e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+      </script>
     </div>
+    <script>
+      $('#myModal').on('hidden.bs.modal', function () {
+          $('#modalxcountryvideo').remove();
+          $('#insertvideohere').prepend('<iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe>');
+      })
+    </script>
   </body>
 </html>

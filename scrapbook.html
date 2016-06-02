@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="tree"></div>
@@ -40,7 +57,140 @@
       <div class="container">
         <div class="content">
           <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">Coming Soon! The site's almost done, please check back on Friday May 27th.
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+              <div id="scrapbook">
+                <h2 class="thin-letter text-center section-title">Scrapbook</h2>
+                <div class="row">
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/date.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Our first date at the Conservatory of Flowers</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/heidrun.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Spending time at the Heidrun Meadery</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/asgame.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">A friend taking a picture of us from afar at our first A's game</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/hats.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Paso Robles for Em's birthday where...</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/horses.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">...we went horseback riding, the horse really liked Emily</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/sandcastle.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Making sandcastles when we go to the beach</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/heinekin.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Visiting the Heinekin Brewery in Amsterdam</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/vwbus.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Legos are like puzzles. We love puzzles.</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/trinity.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Backpacking up to Trinity Alps in Northern California. Alan's first backpacking trip!</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/crosscountryski.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Cross country skiing in Yosemite</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="scrapbook-img">
+                      <iframe id="xcountryvideo" width="100%" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="caption">Our video of our cross country ski trip in Yosemite.</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/prom.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Our "prom" picture in Skaneateles</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/lake.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Taking a quick pic driving the Whaler on the lake</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/japan.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">A stroll in a park in Tokyo</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/dj.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">DJ-ing at the Robot restaurant in Tokyo</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/silly.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">We just took 10 trains in one long day, still smiling</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/hakone.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Relaxation time in Hakone, Japan</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/halloween.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">DIY Halloween costume, can you guess who we are? So many blue threads!</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/xmas.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Holiday party at City Hall</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/hikingfrance.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Hiking in Southern France</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/thailand-beach.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Chilling at Railay Beach, Thailand </p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/thailand-hike.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Sweating on a hike in the hot jungle, ready to see bats </p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/thailand-jump.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Jumping for joy during the sunsets in Koh Lanta, Thailand</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/jackson-dogsled.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Saying hi to the dogsledding team in Jackson Hole. Woof!</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/jackson-horses.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Em and I say hi to the horse team in Jackson Hole. Neigh!</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/sandiego-biking.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">A leisurely bike ride along the beach in San Diego</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/ferry.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Taking a ferry out to explore the San Juan Islands</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/mario1.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Us being us</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/mario2.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Haha =)</p>
+                  </div>
+                  <div onclick="swapImage(this);" data-toggle="modal" data-target="#myModal" class="col-md-4 col-sm-6 col-xs-12">
+                    <div style="background-image: url('img/scrapbook/jumping.jpg')" class="scrapbook-img img-responsive"></div>
+                    <p class="caption">Can't wait to spend time with you at our wedding!</p>
+                  </div>
+                </div>
+              </div>
+              <script>
+                $( "#xcountryvideo" ).attr('height',$('.scrapbook-img').first().parent().height()-82);
+                $( window ).resize(function() {
+                	$( "#xcountryvideo" ).attr('height',$('.scrapbook-img').first().parent().height()-82);
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -52,16 +202,46 @@
     <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div data-dismiss="modal" class="close-modal"><i class="fa fa-close"></i></div>
-          <div class="prev-image"><i class="fa fa-angle-left fa-3x"></i></div>
-          <div class="next-image"><i class="fa fa-angle-right fa-3x"></i></div>
+          <div onclick="gotoPrevImage();" class="prev-image"><i class="fa fa-angle-left fa-3x"></i></div>
+          <div onclick="gotoNextImage();" class="next-image"><i class="fa fa-angle-right fa-3x"></i></div>
           <div class="modal-body"> 
             <div class="row">
-              <div class="col-xs-12"><img src="img/scrapbook/thailand-jump.jpg" class="img-responsive"></div>
+              <div id="insertvideohere" class="col-xs-12">
+                <iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe><img id="modalimage" class="img-responsive">
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        
+        $(document).keydown(function(e) {
+        	switch(e.which) {
+        		case 37: // left
+        			gotoPrevImage();
+        			break;
+        
+        		case 38: // up
+        		break;
+        
+        		case 39: // right
+        			gotoNextImage();
+        			break;
+        
+        		case 40: // down
+        		break;
+        
+        		default: return; // exit this handler for other keys
+        	}
+        	e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+      </script>
     </div>
+    <script>
+      $('#myModal').on('hidden.bs.modal', function () {
+          $('#modalxcountryvideo').remove();
+          $('#insertvideohere').prepend('<iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe>');
+      })
+    </script>
   </body>
 </html>

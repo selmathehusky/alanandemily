@@ -50,7 +50,7 @@ a:hover{
 }
 
 .spacing{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .navbar{
@@ -130,7 +130,7 @@ a:hover{
 }
 
 .content{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 16px;
   color: #FEFEFE !important;
 }
@@ -178,6 +178,7 @@ a:hover{
   text-decoration: italic;
   display: inline-block;
   padding: 20px;
+  font-weight: 100;
 }
 
 #scrapbook .scrapbook-img{
@@ -195,11 +196,12 @@ a:hover{
 
 #scrapbook .caption{
   font-size: 14px;
-  height: 44px;
+  height: 60px;
 }
 
 .place{
   margin-bottom: 10px;
+  font-weight: 100;
 }
 
 .place .name{
@@ -285,3 +287,18 @@ a:hover{
   margin-top: -5px;
 }
 
+.section-title{
+  margin-bottom: 20px;
+}
+
+.section-title:before{
+  content: url('../img/text-decor-left.png');
+}
+
+.section-title:after{
+  content: url('../img/text-decor-right.png');
+}
+
+#modalxcountryvideo{
+  display: none;
+}
