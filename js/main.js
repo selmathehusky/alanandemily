@@ -40,6 +40,8 @@ function gotoNextImage(){
 	if (currentIndex == 10){
 		$('#modalxcountryvideo').hide();
 		$('#modalimage').show();
+		$('#modalxcountryvideo').remove();
+        $('#insertvideohere').prepend('<iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe>');
 	}
 	if (currentIndex < images.length-1){
 		$('#myModal img').attr('src', './img/scrapbook/' + images[currentIndex+1]);	
@@ -67,6 +69,8 @@ function gotoPrevImage(){
 	if (currentIndex == 10){
 		$('#modalxcountryvideo').hide();
 		$('#modalimage').show();
+		$('#modalxcountryvideo').remove();
+        $('#insertvideohere').prepend('<iframe id="modalxcountryvideo" width="100%" height="400" src="https://www.youtube.com/embed/6WcMJkiv4fs" frameborder="0" allowfullscreen></iframe>');
 	}
 	if (currentIndex >0){
 		$('#myModal img').attr('src', './img/scrapbook/' + images[currentIndex-1]);
